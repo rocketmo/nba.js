@@ -14,14 +14,17 @@ export default function fetch(endpoint = "", opts) {
   opts = Object.assign(
     {
       headers: {
+        accept: "application/json, text/plain, */*",
         "accept-encoding": "Accepflate, sdch",
         "accept-language": "he-IL,he;q=0.8,en-US;q=0.6,en;q=0.4",
         "cache-control": "max-age=0",
         connection: "keep-alive",
         host: "stats.nba.com",
-        referer: "http://stats.nba.com/",
+        referer: "https://stats.nba.com/",
         "user-agent":
-          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36",
+        "x-nba-stats-origin": "stats",
+        "x-nba-stats-token": "true"
       },
       json: false
     },
