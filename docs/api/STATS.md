@@ -551,6 +551,23 @@
     * `LeagueID`
     * `PlayerID`
 
+* `playerIndex`
+  * Endpoint:
+    [`/stats/playerindex`](http://stats.nba.com/stats/playerindex)
+  * Parameters:
+    * `College`
+    * `Country`
+    * `DraftPick`
+    * `DraftRound`
+    * `DraftYear`
+    * `Height`
+    * `Historical`
+    * `LeagueID`
+    * `Season`
+    * `SeasonType`
+    * `TeamID`
+    * `Weight`
+
 * `playerOpponentStats`
 
   * Endpoint:

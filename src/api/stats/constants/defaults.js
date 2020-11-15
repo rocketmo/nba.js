@@ -19,6 +19,7 @@ const DEFAULTS = {
   graphStats: "PTS",
   groupQuantity: 5,
   height: null,
+  historical: "1",
   lastNGames: "0",
   leagueID: "00",
   location: null,
@@ -37,7 +38,7 @@ const DEFAULTS = {
   pointDiff: "5",
   rangeType: 0,
   scope: "S",
-  season: "2017-18",
+  season: "2019-20",
   seasonSegment: null,
   seasonSingleYear: "2015",
   seasonType: "Regular Season",
@@ -1302,5 +1303,24 @@ export const LEAGUE_STANDINGS = {
     LeagueID: DEFAULTS.leagueID,
     SeasonType: DEFAULTS.seasonType,
     Season: DEFAULTS.season
+  }
+};
+
+export const PLAYER_INDEX = {
+  method: "playerIndex",
+  endpoint: "/stats/playerindex",
+  defaults: {
+    College: null,
+    Country: null,
+    DraftPick: null,
+    DraftRound: null,
+    DraftYear: DEFAULTS.draftYear,
+    Height: DEFAULTS.height,
+    Historical: DEFAULTS.historical,
+    LeagueID: DEFAULTS.leagueID,
+    Season: DEFAULTS.season,
+    SeasonType: DEFAULTS.seasonType,
+    TeamID: DEFAULTS.teamID,
+    Weight: DEFAULTS.weight
   }
 };
